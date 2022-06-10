@@ -1,0 +1,223 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Arial", serif;
+}
+
+.container {
+    width: 1340px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.cards{
+    
+    background-color: #f7ce76;
+}
+.site-theme {
+    display: none;
+}
+
+.card-section {
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+.card-section-theme {
+    position: relative;
+    color: #736D72;
+}
+
+.card-section-theme::after {
+    left: 80%;
+    font-weight: 600;
+    font-size: 30px;
+    content: "+";
+    position: absolute;
+    color: #000;
+    font-weight: 400;
+
+}
+
+.card-list {
+    margin: 0;
+    padding: 0;
+}
+
+.card-list-item {
+    margin-bottom: 30px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    width: 400px;
+    list-style: none;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 2px solid transparent;
+}
+
+.card-list-item:nth-child(3) {
+    margin-bottom: 0;
+}
+.card-list-item:hover{
+    border: 2px solid #00f;
+}
+
+.card-list-item-code {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.card-list-item-time {
+    margin: 0;
+}
+
+.viza-card::before {
+    content: "";
+    background-image: url(../images/viza.png);
+    height: 70px;
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.master-card::before {
+    margin-bottom: 20px;
+    content: "";
+    background-image: url(../images/master-card.png);
+    height: 50px;
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.maestro-card::before {
+
+    margin-bottom: 20px;
+    content: "";
+    background-image: url(../images/maestro-card.png);
+    height: 50px;
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.card-offer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-section{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 500px;
+}
+.choose-offer{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 950px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #fff;
+}
+.current-balance-theme {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #736D72;
+}
+.current-balance-text{
+    color: #736D72;
+    margin: 0;
+    margin-top: 40px;
+    padding-bottom: 20px;
+}
+.current-balance-cost{
+    margin: 0;
+    margin-top: 40px;
+    padding-bottom: 20px;
+    font-weight: 900;
+    font-size: 25px;
+}
+.current-balance-list{
+    padding: 0;
+}
+.current-balance-list-items{
+    list-style: none;
+    margin-bottom: 20px;
+    width: 100%;
+    
+}
+.current-balance-list-items .list-item-box .item-box-in .item-box-in-start:checked{
+    
+    background-color: #736d729a;
+}
+.list-item-box{
+    /* background-color: #736D72; */
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.item-box-in {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.apple-input{
+    display: none
+}
+.item-box-in-start{ 
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+}
+.item-box-in::before {
+    position:absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/minus.png);
+    background-size: contain;
+
+}
+.apple-input:checked + .list-item-box .item-box-in::before{
+    background-image: url(../images/plus.png);
+    
+}
+.item-box-in-costs{
+    color: #00f;
+    font-weight: 900;
+}
+.apple-input:checked + .list-item-box .item-box-in .item-box-in-costs{
+    color: #008000;
+    font-weight: 900;
+}
+.apple-input:checked + .list-item-box{
+    box-shadow: 0 5px 15px 1px #000;
+    border-radius: 15px;
+    background-color: #eee8ee8a;
+}
+
+.item-box-in-theme {
+    margin: 0;
+    
+    margin-bottom: 5px;
+}
+
+.item-box-in-text {
+    margin: 0;
+}
+.currency-button{
+    display: flex;
+    justify-content: end;
+}
+.button-cancel{
+    margin-right: 10px;
+    padding: 5px;
+    border: 1px solid #00f;
+    color: #00f;
+    border-radius: 10px;
+}
